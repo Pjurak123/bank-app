@@ -1,0 +1,2 @@
+- navigation active (change)
+- logo on mobile device 

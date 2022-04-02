@@ -1,0 +1,47 @@
+.article-container {
+  background-color: var(--clr-neutral-main-very-light-gray);
+}
+
+.article-title {
+  color: var(--clr-primary-dark-blue);
+  font-weight: 400;
+  margin: 0 auto 1.5rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--clr-neutral-main-white);
+  margin: 1.3rem 1.3rem;
+  text-align: left;
+}
+
+.article_text_container {
+  padding: 0 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.article_author {
+  color: var(--clr-neutral-main-grayish-blue);
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin: 2rem 0 1rem;
+}
+
+.article_title {
+  color: var(--clr-primary-dark-blue);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.article_text {
+  color: var(--clr-neutral-main-grayish-blue);
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
