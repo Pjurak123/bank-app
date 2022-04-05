@@ -1,2 +1,3 @@
-- navigation active (change)
-- logo on mobile device 
+- fixed navigation
+- hover effects
+

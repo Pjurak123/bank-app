@@ -46,6 +46,6 @@
   width: 95%;
 }
 
-.row > .service > p:nth-child() {
-  color: red;
+.service-container .row:last-child {
+  padding-bottom: 4rem;
 }

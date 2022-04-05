@@ -76,6 +76,11 @@
   margin-bottom: 5rem;
 }
 
+.hero-button:hover {
+  cursor: pointer;
+  filter: brightness(120%) saturate(80%);
+}
+
 @media screen and (max-width: 374px) {
   .text {
     min-width: auto;

@@ -21,6 +21,7 @@
   width: 80vw;
   justify-content: center;
   margin-right: 2rem;
+  overflow: hidden;
 }
 
 .nav-links {
@@ -52,7 +53,10 @@
   }
 
   .nav-menu.active {
-    background-color: red;
+    background-color: var(--clr-neutral-main-white);
+    box-shadow: 1px 139px 100px 130px rgba(45, 49, 77, 0.49);
+    -webkit-box-shadow: 1px 139px 100px 130px rgba(45, 49, 77, 0.49);
+    -moz-box-shadow: 1px 139px 100px 130px rgba(45, 49, 77, 0.49);
     left: 0;
     opacity: 1;
     align-self: center;
@@ -60,11 +64,13 @@
     z-index: 1;
     padding: 0;
     margin-left: 10%;
+    position: fixed;
   }
 
   .nav-links {
     text-align: center;
     color: var(--clr-primary-dark-blue);
+    margin: 0.2rem 0;
     width: 100%;
     display: table;
   }
