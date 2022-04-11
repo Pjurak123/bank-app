@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bank-app/static/css/main.e9859746.css",
+    "main.css": "/bank-app/static/css/main.07fe15ed.css",
     "main.js": "/bank-app/static/js/main.1199b6c2.js",
     "static/media/image-currency.jpg": "/bank-app/static/media/image-currency.1b385bf9f62bf25ef22d.jpg",
     "static/media/image-restaurant.jpg": "/bank-app/static/media/image-restaurant.1951b57675babfd83c6c.jpg",
@@ -17,11 +17,11 @@
     "index.html": "/bank-app/index.html",
     "static/media/icon-close.svg": "/bank-app/static/media/icon-close.c2e36e0469b3b1e6c27328356ce18aed.svg",
     "static/media/icon-hamburger.svg": "/bank-app/static/media/icon-hamburger.b0d311feac968ee5feab7333de091d7f.svg",
-    "main.e9859746.css.map": "/bank-app/static/css/main.e9859746.css.map",
+    "main.07fe15ed.css.map": "/bank-app/static/css/main.07fe15ed.css.map",
     "main.1199b6c2.js.map": "/bank-app/static/js/main.1199b6c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9859746.css",
+    "static/css/main.07fe15ed.css",
     "static/js/main.1199b6c2.js"
   ]
 }
