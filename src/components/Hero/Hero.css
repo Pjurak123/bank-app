@@ -1,13 +1,15 @@
 /* Hero section container */
 
 .hero-container {
+  background-color: var(--clr-neutral-main-very-light-gray);
   display: flex;
   flex-direction: column;
+  overflow: visible;
   width: 100%;
-  overflow: hidden;
+  z-index: 1;
 }
 
-.row {
+.row-hero {
   display: flex;
   flex-direction: column;
 }
@@ -23,22 +25,21 @@
 .bg-image {
   position: relative;
   display: flex;
+  width: 100%;
+  height: auto;
   background-repeat: no-repeat;
-  top: -2.2rem;
   left: 0;
   width: 100%;
 }
 
 .phone-image {
   position: absolute;
-  top: -7.5rem;
-  overflow: hidden;
+  top: -4.5rem;
 }
 
 /* Text styling */
 
 .text-container {
-  margin: -3rem auto 0;
   text-align: center;
 }
 
@@ -84,5 +85,94 @@
 @media screen and (max-width: 374px) {
   .text {
     min-width: auto;
+  }
+}
+
+/* Tablet mode */
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .row-hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .text {
+    margin-left: 0;
+  }
+
+  .image-container {
+    margin: 0;
+  }
+
+  .text-container {
+    margin: 0 0 0 4rem;
+    margin-top: 15%;
+    width: 45%;
+    text-align: left;
+  }
+  .title {
+    margin-left: 0;
+  }
+
+  .bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    height: auto;
+    width: 100%;
+  }
+
+  .phone-image {
+    top: -4.5rem;
+  }
+}
+
+/* Desktop mode */
+
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    overflow-x: clip;
+    z-index: 1;
+  }
+
+  .image-container {
+    margin-left: -5rem;
+  }
+
+  .bg-image {
+    margin-top: -12.8rem;
+    margin-left: 10rem;
+    margin-bottom: -10rem;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .phone-image {
+    left: 18rem;
+    top: -12rem;
+  }
+
+  .text-container {
+    margin: 8rem 0 6rem 3.2rem;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .hero-container {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .bg-image {
+    top: 4rem;
+  }
+  .phone-image {
+    top: -3rem;
   }
 }

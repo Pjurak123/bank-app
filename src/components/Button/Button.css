@@ -12,6 +12,11 @@
   width: 8rem;
 }
 
+.button_request:hover {
+  cursor: pointer;
+  filter: brightness(120%) saturate(70%);
+}
+
 @media screen and (max-width: 960px) {
   .button_request {
     display: none;

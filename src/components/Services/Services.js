@@ -12,7 +12,7 @@ function Services() {
           hub. Control your finances like never before.
         </p>
       </div>
-      <div className="row">
+      <div className="service-row">
         {service.map((service, index) => {
           return (
             <div key={index} className="service">

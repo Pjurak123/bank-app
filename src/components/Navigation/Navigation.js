@@ -24,7 +24,7 @@ function Navigation() {
       <ul className={state ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="Nav-items">
               <a className={item.cName} href={item.url}>
                 {item.title}
               </a>

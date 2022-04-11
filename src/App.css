@@ -40,3 +40,25 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
+
+/* Tablet mode */
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop mode */
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 1.4rem;
+  }
+}

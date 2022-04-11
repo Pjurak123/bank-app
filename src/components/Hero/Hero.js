@@ -1,14 +1,30 @@
-import React from "react";
-import backgroundImg from "../../images/bg-intro-mobile.svg";
+import React, { useEffect, useState } from "react";
+import mobiledImg from "../../images/bg-intro-mobile.svg";
+import desktopImg from "../../images/bg-intro-desktop.svg";
 import phoneImg from "../../images/image-mockups.png";
 import "./Hero.css";
 
 function Hero() {
+  const [desktop, setDesktop] = useState(window.innerWidth > 767);
+
+  const updateImage = () => {
+    setDesktop(window.innerWidth > 767);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  });
+
   return (
     <div className="hero-container">
-      <div className="row">
+      <div className="row-hero">
         <div className="image-container">
-          <img src={backgroundImg} alt="bg-img" className="bg-image" />
+          {desktop ? (
+            <img src={desktopImg} alt="desktop-bg" className="bg-image" />
+          ) : (
+            <img src={mobiledImg} alt="mobile-bg" className="bg-image" />
+          )}
           <img src={phoneImg} alt="phone-img" className="phone-image" />
         </div>
         <div className="text-container">
