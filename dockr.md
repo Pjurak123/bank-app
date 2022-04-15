@@ -9,3 +9,8 @@ docker build -t pjurak/bank-app .
 ```sh
 docker run -p 3000:3000 pjurak/bank-app
 ```
+
+## one-liner without log:
+```sh
+docker run --rm -it -p 3000:3000 $(docker build -q .)
+```
