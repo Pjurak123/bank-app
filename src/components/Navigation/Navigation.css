@@ -35,8 +35,7 @@
 }
 
 .nav-links {
-  color: black;
-  /* color: var(--clr-neutral-main-grayish-blue); */
+  color: var(--clr-neutral-main-grayish-blue);
   text-decoration: none;
   padding: 0rem 1rem;
 }
